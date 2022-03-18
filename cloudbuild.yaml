@@ -21,6 +21,8 @@ steps:
   - id: Push
     name: gcr.io/cloud-builders/docker
     args: ["push", "hello-world-k8s"]
+    options:
+      logging: NONE
 
   # - id: Prepare deploy
   #   name: gcr.io/cloud-builders/gke-deploy
